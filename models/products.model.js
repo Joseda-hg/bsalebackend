@@ -53,7 +53,7 @@ Product.getByCategory = (CategoryId, result) => {
 
     if (res.length) {
       console.log("found product: ", res);
-      result(null, res[0]);
+      result(null, res);
       return;
     }
 
