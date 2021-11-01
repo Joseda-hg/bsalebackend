@@ -12,7 +12,7 @@ module.exports = app => {
     app.get("/api/categories/", categories.findAll);
 
     // Retrieve a single Customer with customerId
-    app.get("/api/products/category/:CategoryId", products.findOne);
+    app.get("/api/products/category/:CategoryId", products.findByCategory);
 
     // Retrieve a single Customer with customerId
     app.get("/api/search/:searchTerm", products.search);

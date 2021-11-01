@@ -43,8 +43,8 @@ Product.getAll = result => {
     });
   };
 
-Product.getByCategory = (categoryId, result) => {
-  sql.query(`SELECT * FROM product WHERE id = ${categoryId}`, (err, res) => {
+Product.getByCategory = (CategoryId, result) => {
+  sql.query(`SELECT * FROM product WHERE category = ${CategoryId}`, (err, res) => {
     if (err) {
       console.log("error: ", err);
       result(err, null);
