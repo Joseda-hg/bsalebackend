@@ -1,5 +1,9 @@
 # Backend para prueba de BSale
 
+El link para la implementacion inicial es el siguiente [Link, advertencia, redireccion automatica al frontend](https://bsalejhernandez.herokuapp.com/)
+
+El link para el repositorio en GitHub es [Repositorio de GitHub](https://github.com/Joseda-hg/bsalebackend)
+
 El Backend de esta aplicacion esta realizado con Node, Express, MySQL y restapi
 
 Las dependencias estan especificadas en el archivo package.json para mas especificidad
