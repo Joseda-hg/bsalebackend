@@ -1,6 +1,6 @@
 const express = require("express");
 const bodyParser = require("body-parser");
-
+var cors = require('cors')
 const app = express();
 
 // parse requests of content-type: application/json
@@ -14,6 +14,8 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.get("/", (req, res) => {
   res.redirect('https://bsalefrontendjhernandez.herokuapp.com/');
 });
+
+app.use(cors())
 
 // Rutas para las requests
 require("./routes/product.routes.js")(app);
