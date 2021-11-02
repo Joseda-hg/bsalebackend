@@ -1,6 +1,6 @@
 {
   "name": "bsale",
-  "version": "1.0.0",
+  "version": "1.1",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -20,7 +20,7 @@
     "nodemon": "^2.0.14"
   },
   "keywords": [],
-  "author": "",
+  "author": "Jose Daniel Hernandez Granadillo",
   "license": "ISC",
   "engines": {
     "node": "14.x"

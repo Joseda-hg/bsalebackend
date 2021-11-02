@@ -52,12 +52,11 @@ Product.getByCategory = (CategoryId, result) => {
     }
 
     if (res.length) {
-      console.log("found product: ", res);
+      console.log("found category: ", res);
       result(null, res);
       return;
     }
 
-    // not found Customer with the id
     result({ kind: "not_found" }, null);
   });
 };
@@ -75,8 +74,7 @@ Product.search = (searchTerm, result) => {
       result(null, res);
       return;
     }
-
-    // not found Customer with the id
+    
     result({ kind: "not_found" }, null);
   });
 };

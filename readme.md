@@ -17,7 +17,7 @@ El servidor posee los siguientes endpoints y una redireccion:
 - /api/categories/:id GET, retorna un json con la categoria correspondiente a ese id
 - /api/search/:searchterm GET, retorna un json con todos los objetos que correspondan vagamente al termino
 
-Todas estas rutas estan especificadas en ./routes/product.routes.js
+Todas estas rutas estan especificadas en ./routes/product.routes.js; Las rutas que no tienen uso en el frontend fueron verificadas con Postman
 
 Los controladores exhiben las busquedas y los parametros correspondentes a los productos y modelos; asi como los codigos http que de retornan al momento de ejecutar secciones
 

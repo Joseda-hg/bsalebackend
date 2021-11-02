@@ -2,18 +2,18 @@ module.exports = app => {
     const products = require("../controllers/product.controller.js");
     const categories = require("../controllers/category.controller.js");
   
-    // Retrieve all Customers
+    // Ruta para recuperar todos los productos
     app.get("/api/products", products.findAll);
   
-    // Retrieve a single Customer with customerId
+    // Ruta para solicitar un producto en especifico
     app.get("/api/products/:productId", products.findOne);
     
-    // Retrieve a single Customer with customerId
+    // Ruta para recuperar todas las categorias
     app.get("/api/categories/", categories.findAll);
 
-    // Retrieve a single Customer with customerId
+    // Ruta para recuperar una categoria en particular 
     app.get("/api/products/category/:CategoryId", products.findByCategory);
 
-    // Retrieve a single Customer with customerId
+    // Ruta para hacer busquedas de productos
     app.get("/api/search/:searchTerm", products.search);
   };

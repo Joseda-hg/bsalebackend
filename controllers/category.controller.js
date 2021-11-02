@@ -1,6 +1,6 @@
 const Category = require("../models/categories.model.js");
 
-// Retrieve all Customers from the database.
+// extrae todos los datos de la columna category de la base de datos
 exports.findAll = (req, res) => {
     Category.getAll((err, data) => {
         if (err)

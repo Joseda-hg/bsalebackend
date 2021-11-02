@@ -1,6 +1,5 @@
 const Product = require("../models/products.model.js");
 
-// Retrieve all Customers from the database.
 exports.findAll = (req, res) => {
     Product.getAll((err, data) => {
         if (err)
@@ -12,7 +11,7 @@ exports.findAll = (req, res) => {
       });
 };
 
-// Find a single Customer with a customerId
+
 exports.findOne = (req, res) => {
     Product.findById(req.params.productId, (err, data) => {
         if (err) {
