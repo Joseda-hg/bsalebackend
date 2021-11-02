@@ -11,9 +11,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 // simple route
 app.get("/", (req, res) => {
-  http.get('*',function(req,res){  
-    res.redirect('http://google.com')
-});
+  res.redirect('http://google.com');
 });
 
 require("./routes/product.routes.js")(app);
