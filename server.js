@@ -11,7 +11,9 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 // simple route
 app.get("/", (req, res) => {
-  res.json({ message: "Welcome to bezkoder application." });
+  http.get('*',function(req,res){  
+    res.redirect('http://exmple.com'+req.url)
+});
 });
 
 require("./routes/product.routes.js")(app);
