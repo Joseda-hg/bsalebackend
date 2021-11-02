@@ -11,7 +11,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 // simple route
 app.get("/", (req, res) => {
-  res.redirect('http://google.com');
+  res.redirect('https://bsalefrontendjhernandez.herokuapp.com/');
 });
 
 require("./routes/product.routes.js")(app);
