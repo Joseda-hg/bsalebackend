@@ -12,7 +12,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 // simple route
 app.get("/", (req, res) => {
   http.get('*',function(req,res){  
-    res.redirect('http://exmple.com'+req.url)
+    res.redirect('http://google.com')
 });
 });
 
