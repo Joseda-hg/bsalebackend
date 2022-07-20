@@ -12,9 +12,8 @@
     "cors": "2.8.1",
     "express": "~4.0.0",
     "mssql": "^6.2.1",
-    "mysql":"2.18.1",
-    "restapi":"0.0.6"
-
+    "mysql": "2.18.1",
+    "restapi": "0.0.6"
   },
   "devDependencies": {
     "nodemon": "^2.0.14"
